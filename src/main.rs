@@ -8,6 +8,9 @@ mod ownership_stack;
 mod move_semantics;
 mod borrow;
 mod structs;
+mod enums;
+mod option;
+mod errors;
 
 fn main() {
     variables :: variables();
@@ -28,4 +31,10 @@ fn main() {
     structs::stack_trait::stack_trait();
     structs::tuple::tuple();
     structs::unit::unit();
+    enums::basic::basic();
+    enums::pattern::pattern();
+    enums::values::value();
+    option::optionEg();
+    errors::recover::recover();
+    errors::panic::unrecoverable();
 }
