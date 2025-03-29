@@ -11,6 +11,9 @@ mod structs;
 mod enums;
 mod option;
 mod errors;
+mod vectors;
+mod hashmap;
+mod iterators;
 
 fn main() {
     variables :: variables();
@@ -35,6 +38,12 @@ fn main() {
     enums::pattern::pattern();
     enums::values::value();
     option::optionEg();
+    vectors::example::example1();
+    vectors::example::example2();
+    vectors::example::example3();
+    hashmap::example::example();
+    iterators::example1::iter_ex1();
+    iterators::example1::iter_ex2();
     errors::recover::recover();
     errors::panic::unrecoverable();
 }
