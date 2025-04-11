@@ -23,7 +23,7 @@ pub fn iter_ex2() {
     for num in v.into_iter() {
         println!("Consuming: {}", num);
     }
-
+    
     //Write the logic to first filter all odd values then double each value and create a new vector
     let v1 : Vec<i32> = vec![4,5,6,7,8,9,10];
     let v2 : Vec<i32> = v1.iter().filter(|x| *x%2==0).map(|x| x*2).collect();

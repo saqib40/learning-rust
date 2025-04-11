@@ -14,6 +14,9 @@ mod errors;
 mod vectors;
 mod hashmap;
 mod iterators;
+mod generics;
+mod traits;
+mod threads;
 
 fn main() {
     variables :: variables();
@@ -44,6 +47,9 @@ fn main() {
     hashmap::example::example();
     iterators::example1::iter_ex1();
     iterators::example1::iter_ex2();
+    generics::ex1::ex1();
+    generics::ex2::ex2();
+    traits::ex1::ex1();
     errors::recover::recover();
     errors::panic::unrecoverable();
 }
